@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon_top"
+        android:layout_width = "0dp"
+        android:layout_height= "0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop = "@dimen/_global_icon_top_padding"
+        android:layout_marginEnd="@dimen/_global_message_padding"
+        />
+
+    <ImageView
+        android:id="@+id/icon_center"
+        android:layout_width = "0dp"
+        android:layout_height= "0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop = "@dimen/_global_icon_top_padding"
+        android:layout_marginEnd="@dimen/_global_message_padding"
+        />
+
+    <TextView
+        android:id="@+id/text"
+        style="?TextAppearanceBody2"
+        android:layout_width = "match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_toEndOf="@id/icon_top"
+        android:gravity="start"
+        android:lineSpacingExtra="0dp"
+         />
+
+</merge>

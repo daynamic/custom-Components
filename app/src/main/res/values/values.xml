@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr format="reference" name="TextAppearanceBody2"/>
+    <attr format="reference|dimension" name="Spacing16dp"/>
+
+    <item name="Spacing16dp" type="dimen">@dimen/space_16dp</item>
+    <item name="iconCheckCircle" type="drawable">@drawable/ic_check_circle</item>
+    <item name="colorGreen10" type="color">@color/green_10</item>
+    <item name="colorGreen100" type="color">@color/green_100</item>
+    <item name="colorGreen50" type="color">@color/green_50</item>
+
+
+    <drawable name="ic_check_circle">@drawable/ic_checkcircle</drawable>
+
+    <color name="green_130">#1d5f02</color>
+    <color name="red_130">#9b1419</color>
+    <color name="yellow_160">#663800</color>
+    <color name="green_10">#eaf3e6</color>
+    <color name="green_100">#2a8703</color>
+    <color name="green_50">#95c381</color>
+
+
+    <dimen name="global_message_padding">10dp</dimen>
+    <dimen name="global_message_wide_padding">16dp</dimen>
+    <dimen name="space_16dp">16dp</dimen>
+    <dimen name="space_24dp">24dp</dimen>
+    <dimen name="global_icon_top_padding">1dp</dimen>
+    <dimen name="global_message_corner_radius">4dp</dimen>
+    <dimen name="global_message_border_stroke">1dp</dimen>
+    <dimen name="global_message_left_edge">4dp</dimen>
+
+    <string name="alert_error_icon_description">Error</string>
+    <string name="alert_info_icon_description">Info</string>
+    <string name="alert_success_icon_description">Success</string>
+    <string name="alert_warning_icon_description">Warning</string>
+
+    <declare-styleable name="Alert">
+        <attr name="alertType">
+            <enum name="Success" value="0"/>
+            <enum name="Info" value="1"/>
+            <enum name="Warning" value="2"/>
+            <enum name="Error" value="3"/>
+        </attr>
+        <attr name="android:background"/>
+        <attr format="string|reference" name="alertText"/>
+        <attr format="color|reference" name="alertTextColor"/>
+        <attr format="color|reference" name="alertTextColorLink"/>
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="banner_container_variant_error_background_color">#ffde1c24</color>
+    <color name="banner_container_variant_info_background_color">#ffde3e4e</color>
+    <color name="banner_container_variant_success_background_color">#ff2a8703</color>
+    <color name="banner_container_variant_warning_background_color">#ffffc220</color>
+</resources>
