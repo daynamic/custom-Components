@@ -3,20 +3,28 @@
 
     <attr format="reference" name="TextAppearanceBody2"/>
     <attr format="reference|dimension" name="Spacing16dp"/>
+    <attr format="reference|dimension" name="Spacing24dp"/>
 
     <item name="Spacing16dp" type="dimen">@dimen/space_16dp</item>
+    <item name="Spacing24dp" type="dimen">@dimen/space_24dp</item>
     <item name="iconCheckCircle" type="drawable">@drawable/ic_check_circle</item>
     <item name="iconExclamation" type="drawable">@drawable/ic_exclamation</item>
+    <item name="iconInformation" type="drawable">@drawable/ic_information</item>
     <item name="colorGreen10" type="color">@color/green_10</item>
     <item name="colorGreen100" type="color">@color/green_100</item>
     <item name="colorGreen50" type="color">@color/green_50</item>
     <item name="colorRed10" type="color">@color/red_10</item>
     <item name="colorRed50" type="color">@color/red_50</item>
     <item name="colorRed100" type="color">@color/red_100</item>
+    <item name="colorGray10" type="color">@color/gray_10</item>
+    <item name="colorGray50" type="color">@color/gray_50</item>
+    <item name="colorBlack" type="color">@color/black_00</item>
+
 
 
     <drawable name="ic_check_circle">@drawable/ic_checkcircle</drawable>
     <drawable name="ic_exclamation">@drawable/ic_exclamationcircle</drawable>
+    <drawable name="ic_information">@drawable/ic_infocircle</drawable>
 
     <color name="green_130">#1d5f02</color>
     <color name="red_130">#9b1419</color>
@@ -27,6 +35,9 @@
     <color name="green_10">#eaf3e6</color>
     <color name="green_100">#2a8703</color>
     <color name="green_50">#95c381</color>
+    <color name="gray_10">#f1f1f2</color>
+    <color name="gray_50">#babbbe</color>
+    <color name="black_00">#000000</color>
 
 
     <dimen name="global_message_padding">10dp</dimen>

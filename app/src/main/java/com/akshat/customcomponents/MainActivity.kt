@@ -28,6 +28,18 @@ class MainActivity : AppCompatActivity() {
         binding.buttonError.setOnClickListener {
             setAlertMessageError("Error Button clicked", Alert.AlertType.ALERT_ERROR)
         }
+
+        binding.buttonInfo.setOnClickListener {
+            setAlertMessageInfo("Info button clicked", Alert.AlertType.ALERT_INFO)
+        }
+    }
+
+    private fun setAlertMessageInfo(s: String, alertInfo: Alert.AlertType) {
+        binding.alertMessageInfo.apply {
+            setAlertType(alertInfo)
+            visibility = View.VISIBLE
+            setText(s)
+        }
     }
 
     private fun setAlertMessageError(s: String, alertError: Alert.AlertType) {

@@ -37,11 +37,26 @@
         app:layout_constraintTop_toBottomOf="@+id/alert_message"
         />
 
+    <com.akshat.customcomponents.widgets.Alert
+        android:id="@+id/alert_message_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16dp"
+        android:layout_marginBottom="@dimen/space_16dp"
+        android:layout_marginHorizontal="@dimen/space_24dp"
+        app:alertType="Info"
+        android:visibility="gone"
+        tools:alertText="hdhhhhjds"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert_message_error"
+        />
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Success"
+        android:text="@string/alert_success_icon_description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,13 +65,21 @@
     <Button
         android:id="@+id/buttonError"
         android:layout_width="133dp"
-        android:layout_height="46dp"
-        android:text="Error"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/space_16dp"
+        android:text="@string/alert_error_icon_description"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.616" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/buttonInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alert_info_icon_description"
+        android:layout_marginTop="@dimen/space_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonError" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

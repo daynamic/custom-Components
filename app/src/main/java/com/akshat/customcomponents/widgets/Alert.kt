@@ -102,9 +102,9 @@ class Alert @JvmOverloads constructor(
             AlertType.ALERT_INFO -> {
                 iconText = resources.string(R.string.alert_info_icon_description)
                 setResources(
-                    0,
+                    R.drawable.iconInformation,
                     ContextCompat.getColor(context, R.color.black),
-                   null
+                    ContextCompat.getDrawable(context, R.drawable.alert_background_info)
                 )
             }
             AlertType.ALERT_WARNING -> {
