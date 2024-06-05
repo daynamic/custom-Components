@@ -93,9 +93,9 @@ class Alert @JvmOverloads constructor(
             AlertType.ALERT_ERROR -> {
                 iconText = resources.string(R.string.alert_error_icon_description)
                 setResources(
-                    0,
+                    R.drawable.iconExclamation,
                     ContextCompat.getColor(context, R.color.red_130),
-                    null,
+                    ContextCompat.getDrawable(context, R.drawable.alert_background_error),
                     ContextCompat.getColor(context, R.color.banner_container_variant_error_background_color)
                 )
             }

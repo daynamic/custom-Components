@@ -6,15 +6,23 @@
 
     <item name="Spacing16dp" type="dimen">@dimen/space_16dp</item>
     <item name="iconCheckCircle" type="drawable">@drawable/ic_check_circle</item>
+    <item name="iconExclamation" type="drawable">@drawable/ic_exclamation</item>
     <item name="colorGreen10" type="color">@color/green_10</item>
     <item name="colorGreen100" type="color">@color/green_100</item>
     <item name="colorGreen50" type="color">@color/green_50</item>
+    <item name="colorRed10" type="color">@color/red_10</item>
+    <item name="colorRed50" type="color">@color/red_50</item>
+    <item name="colorRed100" type="color">@color/red_100</item>
 
 
     <drawable name="ic_check_circle">@drawable/ic_checkcircle</drawable>
+    <drawable name="ic_exclamation">@drawable/ic_exclamationcircle</drawable>
 
     <color name="green_130">#1d5f02</color>
     <color name="red_130">#9b1419</color>
+    <color name="red_10">#fce8e9</color>
+    <color name="red_50">#ef8e92</color>
+    <color name="red_100">#de1c24</color>
     <color name="yellow_160">#663800</color>
     <color name="green_10">#eaf3e6</color>
     <color name="green_100">#2a8703</color>

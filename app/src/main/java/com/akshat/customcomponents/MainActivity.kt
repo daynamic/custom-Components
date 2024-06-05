@@ -22,12 +22,24 @@ class MainActivity : AppCompatActivity() {
 
     private fun setUpUI(){
         binding.button.setOnClickListener {
-            setAlertMessage("Successfully clicked button", Alert.AlertType.ALERT_SUCCESS)
+            setAlertMessageSuccess("Successfully clicked button", Alert.AlertType.ALERT_SUCCESS)
+        }
+
+        binding.buttonError.setOnClickListener {
+            setAlertMessageError("Error Button clicked", Alert.AlertType.ALERT_ERROR)
+        }
+    }
+
+    private fun setAlertMessageError(s: String, alertError: Alert.AlertType) {
+        binding.alertMessageError.apply {
+            setAlertType(alertError)
+            visibility = View.VISIBLE
+            setText(s)
         }
     }
 
     @VisibleForTesting
-    internal fun setAlertMessage(message: String, alertType: Alert.AlertType = Alert.AlertType.ALERT_SUCCESS){
+    internal fun setAlertMessageSuccess(message: String, alertType: Alert.AlertType = Alert.AlertType.ALERT_SUCCESS){
         binding.alertMessage.apply {
             setAlertType(alertType)
             visibility = View.VISIBLE
